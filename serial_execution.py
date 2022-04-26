@@ -6,7 +6,8 @@ from subprocess import PIPE
 import file_ops
 from safe_check import validate_input
 
-SAFE_MODE = True
+SAFE_MODE = False
+
 def serial_execute(data):
     #check for all arguments
     if "code" not in data or "input" not in data or "time_limit" not in data or "lang" not in data or "user_id" not in data:
