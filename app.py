@@ -3,7 +3,7 @@ import logging
 from utils import configure_logger
 from serial_execution import serial_execute
 from output import fetch_output, just_output
-from flask_cors import CORS
+from flask_cors import CORS,cross_origin
 
 app = Flask(__name__)
 CORS(app)
@@ -47,11 +47,10 @@ def get_status():
         return jsonify(resp)
 
 @app.route('/get_output', methods=["POST"])
+@cross_origin()
 def get_output():
-    print("Damnn")
     if request.method == "POST":
         data = request.form
-        print(data)
         exec_id = data["id"]
         if exec_id[-4:] == ".cpp":
             exec_id = exec_id[:-4]
