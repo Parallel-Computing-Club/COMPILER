@@ -1,0 +1,38 @@
+event_log.txt
+__pycache__
+judge0-v1.13.0
+codes
+outputs
+
+# Prerequisites
+*.d
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+# *.out
+*.app
+
+.
+..
+.git
+.DS_Store
+
