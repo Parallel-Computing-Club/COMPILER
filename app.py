@@ -12,6 +12,18 @@ CORS(app)
 def home():
     return render_template('index.html')
 
+@app.route('/contactus')
+def contactus():
+    return render_template('contactus.html')
+
+@app.route('/aboutus')
+def aboutus():
+    return render_template('aboutus.html')
+
+@app.route('/apidoc')
+def apidoc():
+    return render_template('apidoc.html')
+
 @app.route('/run_code', methods=['POST'])
 def run_code():
     if request.method == "POST":

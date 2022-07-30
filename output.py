@@ -42,7 +42,7 @@ def just_output(exec_id, inp, time_limit):
         runfile = subprocess.run([compiled_file_path], input=input_data.encode('utf-8'), stdout=PIPE, stderr=PIPE, timeout=float(time_limit))
         if runfile.returncode == 0:
             output = runfile.stdout.decode('utf-8')
-            status = "ok"
+            status = "Ok"
         else:
             output = "Error in Execution"
             status = "Runtime Error"
@@ -58,7 +58,7 @@ def just_output(exec_id, inp, time_limit):
 
     except:
         logging.info("Runtime Error-Segmentation Fault")
-        resp = {"output": "segmentation fault", "status": "Runtime Error",  "id":  exec_id}
+        resp = {"output": "Segmentation Fault", "status": "Runtime Error",  "id":  exec_id}
 
     logging.info("Just the output Fetched")
     return resp

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-info{
+    color: #fff;
+    max-width: 700px;
+    line-height: 50px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+  
+.contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+  
+
+.container{
+    min-height: 100vh;
+    background: #08071d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/static/images/contactus.png") no-repeat center center/cover;
+}
+
+.container form{
+    width: 670px;
+    height: 490px;
+    display: flex;
+    /* justify-content: center; */
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.container form h1{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+    margin-left: 90px;
+}

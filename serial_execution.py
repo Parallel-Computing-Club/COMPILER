@@ -52,7 +52,7 @@ def serial_execute(data):
         runfile = subprocess.run([compiled_file_path], input=input_data.encode('utf-8'), stdout=PIPE, stderr=PIPE, timeout=float(data["time_limit"]))
         if runfile.returncode == 0:
             output = runfile.stdout.decode('utf-8')
-            status = "code ok"
+            status = "Code Ok"
         else:
             output = "Error in Execution"
             status = "Runtime Error"
