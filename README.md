@@ -2,7 +2,7 @@
 
 ![Flask](https://img.shields.io/badge/FLask-Python3-brightgreen.svg) 
 ![HTML](https://img.shields.io/badge/HTML-5-ff69b4.svg)
-![CSS](https://img.shields.io/badge/CSS-3.0-orange.svg) 
+![CSS](https://img.shields.io/badge/CSS-3-orange.svg) 
 
 
 ### • This Platform is a  _**Code Execution Engine**_.
